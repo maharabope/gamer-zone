@@ -1,0 +1,117 @@
+body{
+    
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto 10%;
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.icon img{
+    width: 86.041px;
+    height: 40px;
+}
+.icon h1{
+    margin: 0; 
+    font-size: 2.7em;
+    font-weight: 700;
+    
+
+}
+nav span{
+    color: rgb(244, 27, 164);
+}
+.nav-link{
+    display: flex;
+    gap: 32px;
+    font-size: 18px;
+    color: #574f6e;
+    font-weight: 500;
+}
+.nav-link button{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* banner section  */
+.banner h1{
+    margin: 0;
+    font-size: 2.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner h2{
+    margin:.3em 0;
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner p{
+    font-size: 20px;
+    color: #574f6e;
+    font-weight: 500;
+    line-height: 30px;
+    
+}
+
+.primary-button{
+    font-size: 20px;
+    color: white;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background-color: #F948B2;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-color{
+    background: #4EC5F7;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+.section1{
+    background-image: url(/images/Group\ 14.png);
+    width: 100%;
+    
+
+}
+.banner img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 425px) {
+    nav, .nav-link, .banner{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    
+}

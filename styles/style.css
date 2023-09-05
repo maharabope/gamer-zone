@@ -67,7 +67,7 @@ nav span{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner p{
+.banner p, .p-text{
     font-size: 20px;
     color: #574f6e;
     font-weight: 500;
@@ -84,33 +84,95 @@ nav span{
     border: none;
     font-weight: 600;
     text-transform: uppercase;
+    
 }
 .btn-color{
+    margin-left:10px;
     background: #4EC5F7;
 }
+.banner-button{
+    display: flex;
+}
+
 
 .banner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 50px;
     align-items: center;
     margin: 0 10%;
 }
 .section1{
     background-image: url(/images/Group\ 14.png);
-    width: 100%;
+     width: 100%;
     
 
 }
+.banner-contain{
+    width: 50%;
+}
+
 .banner img{
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+/* section 2  */
+.collection-section{
+    margin: 120px 10%;
+    text-align: center;
+}
+.collection-section h1{
+    margin: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.collection-section span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.collection-container{
+
+    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    text-align: start;
+    font-size: 20px;
+    color: #574f6e;
+    font-weight: 500;
+    
+   
+}
+.collection-container > div {
+    width: 100%;
+}
+.collection-container> div > img{
+    /* height: 400px; */
     width: 100%;
 }
 
 
 @media screen and (max-width: 425px) {
-    nav, .nav-link, .banner{
+    nav, .nav-link, .banner, .collection-container{
         flex-direction: column;
         
         align-items: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-contain{
+        width:100%
+    }
+    .primary-button{
+        font-size: 1rem;
+        padding: 15px;
+        
+
     }
 
     

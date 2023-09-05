@@ -43,6 +43,8 @@ nav span{
     display: flex;
     align-items: center;
     font-size: 18px;
+    color: #574f6e;
+    font-weight: 600;
     gap: 10px;
     padding: 5px 15px;
     border-radius: 8px;
@@ -153,6 +155,39 @@ nav span{
 .collection-container> div > img{
     width: 100%;
 }
+.image3{
+    position: relative;
+    
+}
+.style{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 74%;
+    border-radius: 15px;
+    border: #F948B2 solid 2px;
+    opacity: 0;
+    background-color: #252121b5;
+    background-image: url(/images/youtube.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.style::after{
+    content: "Watch Now";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #F948B2;
+}
+.image3:hover .style{
+
+    opacity: 1;
+}
 
 .play-section{
 
@@ -202,6 +237,7 @@ nav span{
     border: none;
     background-color: white;
     margin:18px ;
+    
 }
 .btn-container>button>img{
     width: 50px;
@@ -209,6 +245,34 @@ nav span{
 .btn-container>button:hover{
     border: #F948B2 solid 2px;
     color: #F948B2;
+}
+
+footer{
+    background-color:  #0B0223;
+    text-align: center;
+    margin-top: 8%;
+    padding: 5%;
+    color: white;
+}
+footer>div>div{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 3%;
+}
+footer>div span{
+    color:#F948B2;
+}
+.copyRight-text{
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.60);;
+}
+.copyRight-text>br{
+    display: none;
+}
+.footer-icon>button{
+    background: none;
+    border: none;
 }
 
 
@@ -219,6 +283,9 @@ nav span{
         
         align-items: center;
     
+    }
+    .banner h2{
+        font-size: 4em;
     }
     .banner{
         flex-direction: column-reverse;
@@ -238,7 +305,7 @@ nav span{
     }
     
     .main-image{
-        margin: 5% 10;
+        margin: 5% 0;
 
         padding: 0;
         
@@ -252,5 +319,97 @@ nav span{
         right: 50px;
 
     }
+    .btn-container>button{
+        font-size: .5em;
+        gap: .5em;
+        font-weight: 600;
+        border-radius: 40px;
+        padding: 2px 3px;
+        margin: 5px;
+        justify-content: space-evenly;
+    }
+    .btn-container>button>img{
+        width: 20px;
+    }
+    footer>div>div{
+        flex-wrap: wrap;
+    }
+    footer>div{
+        
+        padding: 8%;
+    }
+    
+    .footer-icon svg{
+        margin: 10px;
+    }
+    .copyRight-text{
+        margin: 0;
+        
+        /* padding: 0px; */
+    }
+    .copyRight-text>br{
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .play-section{
+        flex-direction: column;
+        
+    }
+    .main-image{
+        margin: 5% 0 ;
+
+        padding: 0;
+        
+        
+        width: 175%;
+    }
+    .upper-image img{
+        width: 50%;
+        position: relative;
+        bottom: -100px;
+        right: 50px;
+
+    }
+    .banner h1{
+        font-size: 2em;
+        padding-top: 10px;
+    }
+    .banner h2{
+        font-size: 3em;
+    }
+    .banner p, .p-text{
+        font-size: 1em;
+    }
+    .primary-button{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .icon img{
+        width: 60px;
+        height: auto;
+    }
+    .icon h1{
+        font-size: 2em;
+    }
+    .nav-link button{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 8px;
+        border: none;
+    }
+    .nav-link{
+        flex-direction: column-reverse ;
+        gap: 0;
+        align-items: flex-start;
+        
+    }
+    
     
 }

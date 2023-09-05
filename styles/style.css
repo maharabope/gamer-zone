@@ -123,12 +123,12 @@ nav span{
     margin: 120px 10%;
     text-align: center;
 }
-.collection-section h1{
+.collection-section h1, .title-text{
     margin: 5px;
     font-size: 3rem;
     font-weight: 700;
 }
-.collection-section span{
+.collection-section span, .span-text{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -151,16 +151,74 @@ nav span{
     width: 100%;
 }
 .collection-container> div > img{
-    /* height: 400px; */
     width: 100%;
 }
 
+.play-section{
+
+    margin: 5% 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 220px;
+    text-align: end;
+}
+
+.upper-image{
+    position: relative;
+    bottom: 250px;
+    right: 120px;
+    width: 300px;
+    /* width: 100%; */
+}
+
+
+.image{
+    width: 50%;
+    
+} 
+.btn-section{
+    margin: 0 10%;
+    text-align: center;
+    
+}
+.btn-container{
+    
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.btn-container>button{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 1em;
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    margin:18px ;
+}
+.btn-container>button>img{
+    width: 50px;
+}
+.btn-container>button:hover{
+    border: #F948B2 solid 2px;
+    color: #F948B2;
+}
+
+
 
 @media screen and (max-width: 425px) {
-    nav, .nav-link, .banner, .collection-container{
+    nav, .nav-link, .banner, .collection-container, .play-section{
         flex-direction: column;
         
         align-items: center;
+    
     }
     .banner{
         flex-direction: column-reverse;
@@ -174,6 +232,25 @@ nav span{
         
 
     }
+    .play-section{
+        text-align: center;
+        gap: 5%;
+    }
+    
+    .main-image{
+        margin: 5% 10;
 
+        padding: 0;
+        
+        
+        width: 175%;
+    }
+    .upper-image img{
+        width: 50%;
+        position: relative;
+        bottom: -100px;
+        right: 50px;
+
+    }
     
 }

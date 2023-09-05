@@ -177,10 +177,10 @@ nav span{
 .style::after{
     content: "Watch Now";
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     color: #F948B2;
 }
